@@ -1,8 +1,3 @@
-// this is what you would do if you liked things to be easy:
-// var stringifyJSON = JSON.stringify;
-
-// but you don't so you're going to write it from scratch:
-
 var stringifyJSON = function (obj) {
   // your code goes here
   var result = '';
@@ -37,5 +32,12 @@ var stringifyJSON = function (obj) {
     }
     return '{' + objResult.join(',') + '}';
   }
+
+
+  //return result
   return result;
 };
+
+
+var output = stringifyJSON({ 'foo': true, 'bar': false, 'baz': null })
+console.log(output)
